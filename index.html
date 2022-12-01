@@ -83,6 +83,23 @@
 
 
         // Task_4
+        const fu = (array) => {
+            array.forEach(element => {
+                if (!(element % 2) && element) {
+                    console.log(`${element}^2 = ${element ** 2}`);
+                } else if (!(element % 3) && element) {
+                    console.log(`${element}^3 = ${element ** 3}`);
+                }
+            });
+        }
+
+        const arrTask_4 = getRandomArray(10);
+        console.log(arrTask_4);
+        fu(arrTask_4);
+
+
+
+        // Task_5
         const arr = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
 
         const getAmountElement = (array, serchElement) => {
@@ -99,10 +116,8 @@
 
 
 
-        // Task_5
-
         // Task_6
-
+        
         // Optional_task
     </script>
 </body>
