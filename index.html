@@ -19,9 +19,68 @@
             } else console.log(`${i} - четное число`);
         }
 
+
+
         // Task_2
+        let arrTask_2 = [1, 2, 3, 4, 5, 6, 7];
+        console.log(arrTask_2);
+
+        const removingArrayElements = (array, indexStart, indexEnd) => {
+            const newArray = [];
+            for (let i = 0; i < array.length; i++) {
+                if (i >= indexStart && i <= indexEnd) {
+                    continue;
+                } else {
+                    newArray.push(array[i]);
+                }
+            }
+            return newArray;
+        }
+
+        arrTask_2 = removingArrayElements(arrTask_2, 3, 4);
+        console.log(arrTask_2);
+
+
 
         // Task_3
+        const getRandomArray = (length) => {
+            const array = [];
+            for (let i = 0; i < length; i++) {
+                array[i] = Math.floor(Math.random() * 10);
+            }
+            return array;
+        }
+
+        const getSumElement = (array) => {
+            let sum = 0;
+            array.forEach(element => {
+                sum += element;
+            });
+            return sum;
+        }
+
+        const getMinElement = (array) => {
+            let min = array[0];
+            array.forEach(element => {
+                if (element < min) {
+                    min = element;
+                }
+            });
+            return min;
+        }
+
+        const serchElement = (array, element) => {
+            if (array.indexOf(element) + 1) {
+                return `В массиве есть число ${element}`
+            } else return `В массиве нет числа ${element}`
+        }
+
+        const arrTask_3 = getRandomArray(5);
+        console.log(arrTask_3);
+        console.log(`Сумма элементов массива: ${getSumElement(arrTask_3)}`);
+        console.log(`Минимальное число: ${getMinElement(arrTask_3)}`);
+        console.log(serchElement(arrTask_3, 3));
+
 
         // Task_4
 
