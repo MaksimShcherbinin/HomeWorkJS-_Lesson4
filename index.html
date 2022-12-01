@@ -83,6 +83,21 @@
 
 
         // Task_4
+        const arr = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
+
+        const getAmountElement = (array, serchElement) => {
+            let count = 0;
+            array.forEach(element => {
+                if (element === serchElement) {
+                    count++;
+                }
+            });
+            return count;
+        }
+
+        console.log(`В массиве ${getAmountElement(arr, 3)} искомых элемента`);
+
+
 
         // Task_5
 
