@@ -117,7 +117,20 @@
 
 
         // Task_6
-        
+        const arrTask_6 = [1, 2, 3, 4, 5];
+
+        const length = arrTask_6.length;
+        for (let i = 0; i < length; i++) {
+            let count;
+            count = arrTask_6.shift();
+            if (count !== 2 && count !== 3) {
+                arrTask_6.push(count);
+            }
+        }
+
+        console.log(arrTask_6);
+
+
         // Optional_task
     </script>
 </body>
